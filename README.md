@@ -1,0 +1,1 @@
+# rabbit-mq-course-practice
