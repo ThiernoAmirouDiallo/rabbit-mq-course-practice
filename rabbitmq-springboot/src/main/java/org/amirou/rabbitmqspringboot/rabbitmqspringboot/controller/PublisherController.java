@@ -24,6 +24,7 @@ public class PublisherController {
     @PostMapping("/publish/{name}")
     String postMessage(@PathVariable String name) {
         Person p = new Person(new Random().nextLong(), name);
+        rabbitTemplate.convertAndSend("","Mobile", p); //default Exchange
         rabbitTemplate.convertAndSend("Mobile", p);
 //        rabbitTemplate.convertAndSend("DIRECT-EXCHANGE", "tv", p);
 //        rabbitTemplate.convertAndSend("FANOUT-EXCHANGE", "", p);
