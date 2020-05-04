@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "7800cff1-f2ea-4a1f-a094-ec00ba312c83",
+		"name": "spring-rabbitmq-course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/publish/headers/thierno-headers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/publish/headers/thierno-headers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"publish",
+						"headers",
+						"thierno-headers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/publish/thiernoss",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/publish/thierno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"publish",
+						"thierno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://springboot-rabbitmq.cfapps.io/api/v1/publish/thiernoss",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://springboot-rabbitmq.cfapps.io/api/v1/publish/saikou",
+					"protocol": "https",
+					"host": [
+						"springboot-rabbitmq",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"publish",
+						"saikou"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
